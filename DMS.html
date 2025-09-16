@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Disaster Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+          rel="stylesheet">
+</head>
+<!-- Chatbot Widget -->
+<div id="chatbot">
+  <div id="chat-header">💬 Chatbot</div>
+  <div id="chat-body">
+    <div id="chat-messages"></div>
+    <div id="chat-input-area">
+      <input type="text" id="chat-input" placeholder="Type your message..." />
+      <button id="chat-send">➤</button>
+    </div>
+  </div>
+</div>
+
+<!-- Floating Button -->
+<button id="chat-toggle">💬</button>
+
+<script src="chatbot.js"></script>
+
+<body>
+    <!-- Hero Section -->
+    <div class="hero" id="hero">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#feature">Agencies</a></li>
+                <li><a href="#query">Query</a></li>
+                <li><a href="#Emergency">Emergency Contacts</a></li>
+                <li><a href="#case-study">Case Studies</a></li>
+                
+            </ul>
+        </nav>
+        <div class="heading">
+            <h1>DISASTER MANAGEMENT SYSTEM</h1>
+            <a href="disaster_news.html">News</a>
+        </div>
+    </div>
+
+   
+    <section id="introduction">
+        <h1>Importance of disaster management</h1>
+        <p>Disaster management plays a crucial role in protecting lives, safeguarding infrastructure, 
+        and promoting sustainable development.<br> 
+        Here are several key reasons why disaster management is important:</p>
+
+        <h2>Saving Lives:</h2>
+        <p>Effective disaster management helps minimize casualties by providing timely warnings, 
+        evacuation procedures, and emergency response services during disasters. It ensures that people 
+        are prepared to cope with emergencies, reducing the loss of life.</p>
+
+        <h2>Reducing Economic Losses:</h2>
+        <p>Disasters can cause significant damage to infrastructure, homes, businesses, and agriculture, 
+        leading to economic setbacks. Disaster management aims to mitigate these losses by implementing 
+        measures to strengthen infrastructure, enhance resilience, and promote risk reduction strategies.</p>
+
+        <h2>Preserving Infrastructure and Assets:</h2>
+        <p>By identifying and addressing vulnerabilities in infrastructure and critical facilities, 
+        disaster management efforts help protect essential services such as transportation, communication, 
+        water supply, and energy distribution networks.</p>
+
+        <h2>Promoting Sustainable Development:</h2>
+        <p>Integrating disaster risk reduction into development planning promotes sustainable practices. 
+        By considering disaster risks in land use planning, building codes, and environmental management, 
+        communities can reduce vulnerability and enhance resilience to disasters.</p>
+
+        <h2>Ensuring Continuity of Services:</h2>
+        <p>Disaster management includes planning for business continuity and ensuring the uninterrupted 
+        delivery of essential services such as healthcare, education, and public safety during and after disasters.</p>
+
+        <h2>Enhancing Community Resilience:</h2>
+        <p>Disaster management fosters community resilience by empowering individuals, communities, 
+        and organizations to prepare for, respond to, and recover from disasters. It strengthens social 
+        cohesion, fosters collaboration, and builds trust among stakeholders.</p>
+
+        <h2>Environmental Protection:</h2>
+        <p>Disasters can have significant environmental impacts, including pollution, habitat destruction, 
+        and ecosystem degradation. Disaster management promotes environmentally sustainable practices and 
+        integrates environmental considerations into disaster risk reduction efforts.</p>
+
+        <h2>Addressing Climate Change Challenges:</h2>
+        <p>Climate change is exacerbating the frequency and intensity of many types of disasters. 
+        Disaster management strategies incorporate climate adaptation measures to address these challenges effectively.</p>
+
+        <h2>Ensuring Effective Response and Recovery:</h2>
+        <p>Comprehensive disaster management plans enable coordinated responses to emergencies, 
+        facilitating rapid recovery and rehabilitation efforts.</p>
+
+        <h2>Building National and International Cooperation:</h2>
+        <p>Disaster management fosters collaboration and cooperation among national governments, 
+        local authorities, civil society organizations, and international agencies.</p>
+    </section>
+
+   
+    <section id="feature">
+        <h1>Agencies</h1>
+        <div class="flex-container">
+            <div class="flex-item">
+              <h2>The National Disaster Management Authority (NDMA)</h2>
+              <p>The NDMA is the apex body for disaster management in India...</p>
+              <img src="ndma.png" class="dma">
+            </div>
+            <div class="flex-item">
+                <h2>National Disaster Response Force (NDRF)</h2>
+                <p>The NDRF is a specialized force established for disaster response, rescue, 
+                relief, and recovery operations...</p>
+                <img src="ndrf.jpg" class="dma">
+            </div>
+            <div class="flex-item">
+                <h2>National Institute of Disaster Management (NIDM)</h2>
+                <p>NIDM is an apex national institute for training and capacity development...</p>
+                <img src="nidm.jpg" class="dma">
+            </div>
+        </div>   
+
+        <div class="flex-container2">
+            <div class="flex-item">
+                <h2>State Disaster Management Authority (SDMA)</h2>
+                <p>SDMA is established at the state level to oversee and coordinate 
+                disaster management efforts within the respective state...</p>
+                <img src="SDMA.png" class="dma">
+            </div>
+            <div class="flex-item">
+                <h2>Odisha State Disaster Management Authority</h2>
+                <p>Established after the 1999 supercyclone, the OSDMA focuses on 
+                capacity building and disaster resiliency...</p>
+                <img src="osdma.jpg" class="dma">
+            </div>
+        </div>  
+    </section>
+
+    <!-- Query Form -->
+     <section id="query">
+        <h1>Query</h1>
+        <form action="Connect.php" method="POST">
+            Name: <input class="form-control form-control-lg" type="text" 
+                         placeholder="enter your name" name="name" id="name"><br>
+            Mobile No.: <input class="form-control form-control-lg" type="text" 
+                               placeholder="mobile no." name="mobile" id="mobile"><br>
+            Email: <input class="form-control form-control-lg" type="email" 
+                          placeholder="enter email address" name="email" id="email"><br>
+            Any Query/Comment: <input class="form-control form-control-lg" type="text" 
+                                      placeholder="enter query" name="query" id="query"><br>
+            <button type="submit" name="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Emergency Section -->
+    <section id="Emergency">
+        <h1>Emergency Helplines</h1>
+        <div class="flex-container">
+            <div class="flex-item">
+                <h2>National Helplines</h2>
+                <p>
+                    112: Unified national emergency number<br>
+                    108: National Ambulance Service<br>
+                    1070: State Control Room<br>
+                    1077: State Disaster Management helpline<br>
+                    1078: NDMA helpline
+                </p>
+            </div>
+            <div class="flex-item">
+                <h2>Local/State Emergency Contacts (Hyderabad/Telangana)</h2>
+                <p>
+                    100: Police Control Room<br>
+                    101: Fire<br>
+                    102: Ambulance<br>
+                    040-23202113: Collectorate<br>
+                    08297739999: Disaster Management (Hyderabad District)
+                </p>
+            </div>
+            <div class="flex-item">
+                <h2>How to Use the 112 Emergency App</h2>
+                <p>
+                    Dial 112 from your phone<br>
+                    Press the power button 3 times for panic call<br>
+                    Long press 5 or 9 on feature phone<br>
+                    Use 112 India Mobile App to connect to ERC
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+  <section id="case-study">
+  <h1>Case Studies</h1>
+
+  <h2>Floods:</h2>
+  <div class="case-container">
+    <h3>Uttarakhand Floods (2013):</h3>
+    <p>A cloudburst and glacier melt led to devastating floods in Uttarakhand causing massive loss of life and property.</p>
+    <a href="https://en.wikipedia.org/wiki/2013_North_India_floods" target="_blank">Read more</a>
+  </div>
+
+  <div class="case-container">
+    <h3>Leh Flash Floods (2010):</h3>
+    <p>Heavy rainfall from a cloudburst caused flash floods in Leh damaging many houses and infrastructure.</p>
+    <a href="https://en.wikipedia.org/wiki/2010_Ladakh_floods" target="_blank">Read more</a>
+  </div>
+
+  <div class="case-container">
+    <h3>2005 Mumbai Floods:</h3>
+    <p>Urban flooding due to the heaviest rainfall in a century highlighted infrastructure and preparedness challenges.</p>
+    <a href="https://en.wikipedia.org/wiki/Maharashtra_floods_of_2005" target="_blank">Read more</a>
+  </div>
+
+  <div class="case-container">
+    <h3>2018 Kerala Floods:</h3>
+    <p>Massive floods following unusually high monsoon rainfall caused widespread devastation and displacement.</p>
+    <a href="https://en.wikipedia.org/wiki/2018_Kerala_floods" target="_blank">Read more</a>
+  </div>
+
+  <h2>Earthquakes:</h2>
+  <div class="case-container">
+    <h3>1993 Latur Earthquake:</h3>
+    <p>This intraplate earthquake caused nearly 10,000 deaths and exposed weaknesses in preparedness and response.</p>
+    <a href="https://en.wikipedia.org/wiki/1993_Latur_earthquake" target="_blank">Read more</a>
+  </div>
+
+  <div class="case-container">
+    <h3>2001 Gujarat Earthquake:</h3>
+    <p>The collapse of Bhuj Civil Hospital and massive destruction revealed critical shortcomings in construction and disaster management.</p>
+    <a href="https://en.wikipedia.org/wiki/2001_Gujarat_earthquake" target="_blank">Read more</a>
+  </div>
+
+  <div class="case-container">
+    <h3>2015 Nepal Earthquake:</h3>
+    <p>A devastating earthquake with widespread damage and loss of life, highlighting regional seismic risks.</p>
+    <a href="https://en.wikipedia.org/wiki/2015_Nepal_earthquake" target="_blank">Read more</a>
+  </div>
+
+  <h2>Man-Made Disasters:</h2>
+  <div class="case-container">
+    <h3>Bhopal Gas Tragedy (1984):</h3>
+    <p>A chemical leak tragedy that caused thousands of immediate deaths, long-term health impacts, and industrial safety reforms.</p>
+    <a href="https://en.wikipedia.org/wiki/Bhopal_disaster" target="_blank">Read more</a>
+  </div>
+
+  <div class="case-container">
+    <h3>2005 Mumbai Train Bombings:</h3>
+    <p>Coordinated attacks on local trains exposed challenges in urban security and emergency response.</p>
+    <a href="https://en.wikipedia.org/wiki/2006_Mumbai_train_bombings" target="_blank">Read more</a>
+  </div>
+
+</section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<!-- http://localhost/DMS/DMS.html  -->>
